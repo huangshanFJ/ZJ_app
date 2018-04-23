@@ -118,7 +118,8 @@ static NSString *businessSegmentChildCell = @"businessSegmentChildCell";
 //    CourseDetailViewController *detailVc = [[CourseDetailViewController alloc] init];
     DetailTempViewController *detailVc = [[DetailTempViewController alloc] init];
     BusniessHomeCellModel *model = self.tableArr[indexPath.row];
-    detailVc.courseid = model.identification;
+    detailVc.courseid = model.uid;
+    detailVc.canApply = model.canApply;
     [self.navigationController pushViewController:detailVc animated:YES];
     
 }

@@ -22,7 +22,7 @@
 
 static CGFloat const segmentViewHeight = 44.0;
 static CGFloat const navBarHeight = 0.0;
-static CGFloat const headViewHeight = 235.0;
+static CGFloat headViewHeight = 235.0;
 
 NSString *const ZJParentTableViewDidLeaveFromTopNotification = @"ZJParentTableViewDidLeaveFromTopNotification";
 
@@ -79,9 +79,10 @@ static NSString *const CourseDetailVcCell = @"CourseDetailVcCell";
     self.view.backgroundColor = [UIColor colorWithHexString:@"f4f4f4"];
     self.title = @"课程详情";
     self.automaticallyAdjustsScrollViewInsets = NO;
-    [self.view addSubview:self.customTable];
     
     self.childVcs = [self setupChildVcs];
+    [self.view addSubview:self.customTable];
+    
     [self initUI];
     
 //    [self requestDetailMainData];
@@ -89,7 +90,7 @@ static NSString *const CourseDetailVcCell = @"CourseDetailVcCell";
 
 #pragma ZJScrollPageViewDelegate 代理方法
 - (NSInteger)numberOfChildViewControllers {
-    return 3;
+    return self.childVcs.count;
 }
 
 - (UIViewController<ZJScrollPageViewChildVcDelegate> *)childViewController:(UIViewController<ZJScrollPageViewChildVcDelegate> *)reuseViewController forIndex:(NSInteger)index {
@@ -165,7 +166,12 @@ static NSString *const CourseDetailVcCell = @"CourseDetailVcCell";
         //    style.segmentHeight = 40;
         style.scrollContentView = NO;
         
-        NSArray *titles = @[@"简介",@"讲师",@"目录"];
+        NSArray *titles;
+        if (self.canApply == NO) {
+            titles = @[@"简介"];
+        } else {
+            titles = @[@"简介",@"讲师",@"目录"];
+        }
         
         __weak typeof(self) weakSelf = self;
         ZJScrollSegmentView *segment = [[ZJScrollSegmentView alloc] initWithFrame:CGRectMake(0, navBarHeight + headViewHeight, self.view.bounds.size.width, segmentViewHeight) segmentStyle:style delegate:self titles:titles titleDidClick:^(ZJTitleView *titleView, NSInteger index) {
@@ -197,6 +203,7 @@ static NSString *const CourseDetailVcCell = @"CourseDetailVcCell";
         [SDCycleScrollView clearImagesCache];// 清除缓存。
         [_headView addSubview:self.cycleView];
         
+        
         UIView *centerView = [[UIView alloc] initWithFrame:CGRectMake(0, 190, self.view.width, 40)];
         centerView.backgroundColor = [UIColor whiteColor];
         [_headView addSubview:centerView];
@@ -214,6 +221,14 @@ static NSString *const CourseDetailVcCell = @"CourseDetailVcCell";
         priceL.textAlignment = NSTextAlignmentRight;
         [centerView addSubview:priceL];
         _priceL = priceL;
+        
+        if (self.canApply == NO) {
+            centerView.hidden = YES;
+            headViewHeight = 195;
+        } else {
+            centerView.hidden = NO;
+            headViewHeight = 235;
+        }
     
     }
     return _headView;
@@ -292,14 +307,21 @@ static NSString *const CourseDetailVcCell = @"CourseDetailVcCell";
 
 - (NSArray *)setupChildVcs {
     
+    NSMutableArray *childVcs = [NSMutableArray array];
     CDIntroductionViewController *introdVC = [[CDIntroductionViewController alloc] init];
     introdVC.courseid = self.courseid;
-    CDLecturerViewController *lectuerVC = [[CDLecturerViewController alloc] init];
-    lectuerVC.courseid = self.courseid;
-    CDListViewController *listVC = [[CDListViewController alloc] init];
-    listVC.courseid = self.courseid;
+    [childVcs addObject:introdVC];
     
-    NSArray *arr = @[introdVC,lectuerVC,listVC];
+    if (self.canApply != NO) {
+        CDLecturerViewController *lectuerVC = [[CDLecturerViewController alloc] init];
+        lectuerVC.courseid = self.courseid;
+         [childVcs addObject:lectuerVC];
+        CDListViewController *listVC = [[CDListViewController alloc] init];
+        listVC.courseid = self.courseid;
+        [childVcs addObject:listVC];
+    }
+    
+    NSArray *arr = [NSArray arrayWithArray:childVcs];
     
     return arr;
 }
@@ -309,7 +331,10 @@ static NSString *const CourseDetailVcCell = @"CourseDetailVcCell";
 //    [self setupHeaderView];
 //    [self setupSegmentView];
 //    [self setupContentView];
-    [self setupBottomView];
+    if (self.canApply != NO) {
+        [self setupBottomView];
+    }
+    
 }
 
 - (void)setupHeaderView {
@@ -347,7 +372,12 @@ static NSString *const CourseDetailVcCell = @"CourseDetailVcCell";
     style.scrollContentView = NO;
     style.titleFont = [UIFont systemFontOfSize:13];
     
-    NSArray *titles = @[@"简介",@"讲师",@"目录"];
+    NSArray *titles;
+    if (self.canApply == NO) {
+        titles = @[@"简介"];
+    } else {
+        titles = @[@"简介",@"讲师",@"目录"];
+    }
     
     __weak typeof(self) weakSelf = self;
     ZJScrollSegmentView *segment = [[ZJScrollSegmentView alloc] initWithFrame:CGRectMake(0, headViewHeight, self.view.width, 25) segmentStyle:style delegate:self titles:titles titleDidClick:^(ZJTitleView *titleView, NSInteger index) {

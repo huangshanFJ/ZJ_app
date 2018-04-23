@@ -8,9 +8,7 @@
 
 #import "MyCourseDetailCellModel.h"
 
-@implementation Photo
 
-@end
 
 @implementation MyCourseDetailCellModel
 

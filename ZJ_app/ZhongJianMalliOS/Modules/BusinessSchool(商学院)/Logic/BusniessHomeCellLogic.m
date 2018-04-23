@@ -10,9 +10,12 @@
 #import "BusniessHomeCellApi.h"
 #import "BusniessHomeCellModel.h"
 
+#import <AFNetworking.h>
+
 @implementation BusniessHomeCellLogic
 
 - (void)requestBusniessHomecellDataWithType:(NSInteger)type page:(NSInteger)page pageNum:(NSInteger)pageNum {
+    
     
     BusniessHomeCellApi *api = [[BusniessHomeCellApi alloc] initWithType:type page:page pageNum:pageNum];
     [api startWithCompletionBlockWithSuccess:^(__kindof YTKBaseRequest * _Nonnull request) {
@@ -21,10 +24,13 @@
         
         NSMutableArray *dataArr = [NSMutableArray array];
         NSArray *bodyData = api.result[@"data"];
+        
+        
+        
         for (NSDictionary *dic in bodyData) {
-            BusniessHomeCellModel *model = [BusniessHomeCellModel busniesshomemodelWithDictionary:dic];
+            BusniessHomeCellModel *model = [BusniessHomeCellModel mj_objectWithKeyValues:dic];
             [dataArr addObject:model];
-        } 
+        }
         
         if (self.delegate && [self.delegate respondsToSelector:@selector(requestBusniessHomecellDataCompleted:)]) {
             [self.delegate requestBusniessHomecellDataCompleted:dataArr];
@@ -32,6 +38,7 @@
     } failure:^(__kindof YTKBaseRequest * _Nonnull request) {
         
     }];
+    
 }
 
 @end

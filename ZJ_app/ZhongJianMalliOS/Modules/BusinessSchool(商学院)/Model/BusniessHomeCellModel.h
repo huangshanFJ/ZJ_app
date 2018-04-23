@@ -7,21 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BasePhotoModel.h"
 
-@interface BusniessHomeCellModel : NSObject
+@interface BusniessHomeCellModel : BasePhotoModel
 
-
-@property (nonatomic, copy) NSString *identification;
+//@property (nonatomic, copy) NSString *uid;
 @property (nonatomic, copy) NSString *coursename;
-@property (nonatomic, copy) NSString *coursestartTime;
 @property (nonatomic, copy) NSString *courseprice;
 @property (nonatomic, copy) NSString *curstatus;
 @property (nonatomic, copy) NSString *coursebrief;
-@property (nonatomic, strong) NSArray *coursePhotos;
-
-
-
-- (instancetype)initWithDictionary:(NSDictionary *)dic;
-+ (instancetype)busniesshomemodelWithDictionary:(NSDictionary *)dic;
+//@property (nonatomic, strong) NSArray *coursePhotos;
+@property (nonatomic, assign) BOOL canApply;
 
 @end

@@ -69,7 +69,7 @@
 
 //第三方
 #import <MBProgressHUD.h>
-#import <YYKit.h>
+#import <YYKit/YYKit.h>
 #import <MJExtension.h>
 
 
