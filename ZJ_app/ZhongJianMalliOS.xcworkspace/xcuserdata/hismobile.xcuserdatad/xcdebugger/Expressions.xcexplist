@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[DetailViewController setBottom]:DetailViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataDiction">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[SettlementViewController sendOrderClick:]:SettlementViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.submitGoodsArray">
+            </PersistentString>
+            <PersistentString
+               value = "orderDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[OrderPriceModel initWithDic:]:OrderPriceModel.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[PersonCenterViewController collectionView:cellForItemAtIndexPath:]:PersonCenterViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "personDataDic">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__36-[ShopCarViewController requestData]_block_invoke_2:ShopCarViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SettlementViewController tableView:cellForRowAtIndexPath:]:SettlementViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "priceDiction">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ShoppingCartSettlementViewController viewDidLoad]:ShoppingCartSettlementViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ShopCarViewController sendButtonClick:]:ShopCarViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "totalArray">
+            </PersistentString>
+            <PersistentString
+               value = "dataArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[DetailViewController AddShopViewControllerDelegatePushVC]:DetailViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__39-[SettlementViewController requestData]_block_invoke_2:SettlementViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "responseObject">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__35-[DetailViewController requestData]_block_invoke_2:DetailViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__44-[HomeRedPacketViewController requestPakKey]_block_invoke_2:HomeRedPacketViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[SettlementViewController updateBelance1]:SettlementViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.submitGoodsArray">
+            </PersistentString>
+            <PersistentString
+               value = "self.dataArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__72-[ShopCarViewController tableView:commitEditingStyle:forRowAtIndexPath:]_block_invoke_2:ShopCarViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "dataArray">
+            </PersistentString>
+            <PersistentString
+               value = "model.productList">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AddShopViewController addShopClick:]:AddShopViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "_classArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Red Packet View Controller-->
+        <scene sceneID="eVS-L0-ekj">
+            <objects>
+                <viewController storyboardIdentifier="HomeRedPacketViewController" id="BDB-fk-JtE" customClass="HomeRedPacketViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jXY-nI-2hX"/>
+                        <viewControllerLayoutGuide type="bottom" id="3qQ-vh-uzu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RGW-W5-JDM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedBag" translatesAutoresizingMaskIntoConstraints="NO" id="hKm-V3-pez">
+                                <rect key="frame" x="87" y="251" width="200" height="185"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Apm-mR-Itd"/>
+                                    <constraint firstAttribute="height" constant="185" id="XS9-bm-rDh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RedBagText" translatesAutoresizingMaskIntoConstraints="NO" id="2NV-Ye-0Li">
+                                <rect key="frame" x="158" y="330" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="RF5-V1-gb0"/>
+                                    <constraint firstAttribute="width" constant="45" id="eGB-B9-y1k"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x89-Pd-PYY">
+                                <rect key="frame" x="159.5" y="342.5" width="42" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hKm-V3-pez" firstAttribute="centerY" secondItem="RGW-W5-JDM" secondAttribute="centerYWithinMargins" id="3Wd-P3-7OM"/>
+                            <constraint firstItem="x89-Pd-PYY" firstAttribute="centerY" secondItem="2NV-Ye-0Li" secondAttribute="centerY" id="6ry-XC-xRX"/>
+                            <constraint firstItem="x89-Pd-PYY" firstAttribute="centerX" secondItem="2NV-Ye-0Li" secondAttribute="centerX" id="Bij-5C-cAp"/>
+                            <constraint firstItem="hKm-V3-pez" firstAttribute="centerX" secondItem="RGW-W5-JDM" secondAttribute="centerX" id="VQ8-zR-5yq"/>
+                            <constraint firstItem="2NV-Ye-0Li" firstAttribute="leading" secondItem="hKm-V3-pez" secondAttribute="leading" constant="71" id="e97-yn-adY"/>
+                            <constraint firstItem="2NV-Ye-0Li" firstAttribute="top" secondItem="hKm-V3-pez" secondAttribute="top" constant="79" id="ffK-vV-zNf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="packetTextImgView" destination="2NV-Ye-0Li" id="uhW-MQ-2bv"/>
+                        <outlet property="packetTextLbl" destination="x89-Pd-PYY" id="6Mv-GH-IJi"/>
+                        <outlet property="redPacketView" destination="hKm-V3-pez" id="K7W-qD-mIq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o6X-f6-uIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-660" y="-518.59070464767615"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="RedBag" width="200" height="185"/>
+        <image name="RedBagText" width="45" height="45"/>
+    </resources>
+</document>

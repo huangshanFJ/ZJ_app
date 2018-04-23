@@ -1,0 +1,17 @@
+//
+//  PayPassVerifyViewController.h
+//  ZhongJianMalliOS
+//
+//  Created by 段 on 2018/1/30.
+//  Copyright © 2018年 apple. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface PayPassVerifyViewController : UIViewController
+
+@property (nonatomic,strong)NSString *moneyNumber;
+@property (nonatomic,strong)NSString *cardNo;
+@property (nonatomic,strong)NSString *trueName;
+
+@end
