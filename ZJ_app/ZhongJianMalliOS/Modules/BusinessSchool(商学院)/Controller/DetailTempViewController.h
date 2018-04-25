@@ -11,5 +11,6 @@
 @interface DetailTempViewController : RootViewController
 
 @property (nonatomic, copy) NSString *courseid;
+@property (nonatomic, assign) BOOL canApply;
 
 @end

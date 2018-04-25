@@ -38,6 +38,7 @@ static NSString *businessSegmentChildCell = @"businessSegmentChildCell";
 //    CGRect frame =CGRectMake(0, 0, self.view.width, self.view.height);
     CGRect frame =CGRectMake(0, 0, self.view.width, self.frame.size.height);
     _tableV = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
+    _tableV.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     _tableV.delegate = self;
     _tableV.dataSource = self;
     [self.view addSubview:_tableV];
@@ -118,7 +119,8 @@ static NSString *businessSegmentChildCell = @"businessSegmentChildCell";
 //    CourseDetailViewController *detailVc = [[CourseDetailViewController alloc] init];
     DetailTempViewController *detailVc = [[DetailTempViewController alloc] init];
     BusniessHomeCellModel *model = self.tableArr[indexPath.row];
-    detailVc.courseid = model.identification;
+    detailVc.courseid = model.uid;
+    detailVc.canApply = model.canApply;
     [self.navigationController pushViewController:detailVc animated:YES];
     
 }

@@ -7,19 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BasePhotoModel.h"
 
-@interface Photo : NSObject
-@property (nonatomic, copy) NSString *photo;
-@end
 
-@interface MyCourseDetailCellModel : NSObject
+@interface MyCourseDetailCellModel : BasePhotoModel
 
-@property (nonatomic, copy) NSString *Identification;
+//@property (nonatomic, copy) NSString *Identification;
 @property (nonatomic, copy) NSString *coursename;
 @property (nonatomic, copy) NSString *courseprice;
 @property (nonatomic, copy) NSString *curstatus;
 @property (nonatomic, copy) NSString *coursebrief;
-@property (nonatomic, strong) NSArray *coursePhotos;
+//@property (nonatomic, strong) NSArray *coursePhotos;
 
 @end
 

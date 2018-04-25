@@ -336,6 +336,8 @@
 		DACB3EAE2069DD6700216AFD /* PasswordAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = DACB3EAD2069DD6700216AFD /* PasswordAlertView.m */; };
 		DACB3EBA206A328B00216AFD /* iVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = DACB3EB8206A328B00216AFD /* iVersion.m */; };
 		DACB3EBB206A328B00216AFD /* iVersion.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DACB3EB9206A328B00216AFD /* iVersion.bundle */; };
+		DAD34796208DC2880018ECE6 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD34795208DC2880018ECE6 /* BaseModel.m */; };
+		DAD34799208DC2D40018ECE6 /* BasePhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD34798208DC2D40018ECE6 /* BasePhotoModel.m */; };
 		F4CC33B22051824A00CEDBAC /* ShopSettleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC33B12051824A00CEDBAC /* ShopSettleCell.m */; };
 		F4CC33B52051F8CD00CEDBAC /* ShopOrderModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC33B42051F8CD00CEDBAC /* ShopOrderModel.m */; };
 		F4CC33B82051FA3C00CEDBAC /* ShopOrderSubModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CC33B72051FA3C00CEDBAC /* ShopOrderSubModel.m */; };
@@ -992,6 +994,10 @@
 		DACB3EB7206A328B00216AFD /* iVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iVersion.h; sourceTree = "<group>"; };
 		DACB3EB8206A328B00216AFD /* iVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iVersion.m; sourceTree = "<group>"; };
 		DACB3EB9206A328B00216AFD /* iVersion.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = iVersion.bundle; sourceTree = "<group>"; };
+		DAD34794208DC2880018ECE6 /* BaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		DAD34795208DC2880018ECE6 /* BaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		DAD34797208DC2D40018ECE6 /* BasePhotoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePhotoModel.h; sourceTree = "<group>"; };
+		DAD34798208DC2D40018ECE6 /* BasePhotoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePhotoModel.m; sourceTree = "<group>"; };
 		E59BDF604D770AC544BD3997 /* Pods-ZhongJianMalliOS.release copy.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhongJianMalliOS.release copy.xcconfig"; path = "Pods/Target Support Files/Pods-ZhongJianMalliOS/Pods-ZhongJianMalliOS.release copy.xcconfig"; sourceTree = "<group>"; };
 		F4CC33B02051824A00CEDBAC /* ShopSettleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShopSettleCell.h; sourceTree = "<group>"; };
 		F4CC33B12051824A00CEDBAC /* ShopSettleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShopSettleCell.m; sourceTree = "<group>"; };
@@ -2380,6 +2386,7 @@
 		DA1065E2206F675000EF4061 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				DAD34793208DC2760018ECE6 /* BaseModel */,
 				DA10665A2071D33900EF4061 /* BaseCell */,
 				DA1066712071D33900EF4061 /* NavigationController */,
 				DA10666E2071D33900EF4061 /* RootViewController */,
@@ -2492,11 +2499,11 @@
 			isa = PBXGroup;
 			children = (
 				DA10660E2071CDA700EF4061 /* UIButton+XYButton.h */,
-				DA10660F2071CDA700EF4061 /* UIViewController+AlertViewAndActionSheet.h */,
-				DA1066102071CDA700EF4061 /* UICollectionView+IndexPath.m */,
-				DA1066112071CDA700EF4061 /* UICollectionView+IndexPath.h */,
-				DA1066122071CDA700EF4061 /* UIViewController+AlertViewAndActionSheet.m */,
 				DA1066132071CDA700EF4061 /* UIButton+XYButton.m */,
+				DA10660F2071CDA700EF4061 /* UIViewController+AlertViewAndActionSheet.h */,
+				DA1066122071CDA700EF4061 /* UIViewController+AlertViewAndActionSheet.m */,
+				DA1066112071CDA700EF4061 /* UICollectionView+IndexPath.h */,
+				DA1066102071CDA700EF4061 /* UICollectionView+IndexPath.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -2920,6 +2927,17 @@
 			path = iVersion;
 			sourceTree = "<group>";
 		};
+		DAD34793208DC2760018ECE6 /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				DAD34794208DC2880018ECE6 /* BaseModel.h */,
+				DAD34795208DC2880018ECE6 /* BaseModel.m */,
+				DAD34797208DC2D40018ECE6 /* BasePhotoModel.h */,
+				DAD34798208DC2D40018ECE6 /* BasePhotoModel.m */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3202,6 +3220,7 @@
 				074A0537201AFFC400704C36 /* SYPasswordView.m in Sources */,
 				073513052004A4F50051539A /* PYSearchViewController.m in Sources */,
 				DABF0EE52080DCC7007CD1F9 /* PersonalAccountBalanceLogic.m in Sources */,
+				DAD34799208DC2D40018ECE6 /* BasePhotoModel.m in Sources */,
 				DA91618F2079EDA90099E382 /* ZJScrollSegmentView.m in Sources */,
 				DA1066472071CDA800EF4061 /* UIButton+XYButton.m in Sources */,
 				07765D961FB194520049B805 /* RegistView.m in Sources */,
@@ -3413,6 +3432,7 @@
 				DA1066512071CDA800EF4061 /* TagsButton.m in Sources */,
 				DA9161C3207B886D0099E382 /* BusniessHomeCellApi.m in Sources */,
 				075D58D81FC7BAA7000213EA /* DetailCollectionView.m in Sources */,
+				DAD34796208DC2880018ECE6 /* BaseModel.m in Sources */,
 				076A9CBA1FAFFF2E00EEE630 /* PersonMoneyReusableView.m in Sources */,
 				DA9161AE207B49D90099E382 /* CDLecturerViewController.m in Sources */,
 				071A86711FD791D400183470 /* CourseCell.m in Sources */,

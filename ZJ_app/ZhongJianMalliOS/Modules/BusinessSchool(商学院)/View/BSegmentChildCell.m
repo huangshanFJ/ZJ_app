@@ -160,7 +160,8 @@
     NSArray *photos = model.coursePhotos;
     NSURL *imgUrl;
     if (photos.count > 0) {
-        NSString *urlStr = [NSString stringWithFormat:@"%@%@",HTTPUrl,photos[0][@"photo"]];
+        Photo *pic = photos[0];
+        NSString *urlStr = [NSString stringWithFormat:@"%@%@",HTTPUrl,pic.photo];
         imgUrl = [NSURL URLWithString:urlStr];
     } else {
         imgUrl = nil;
@@ -169,7 +170,6 @@
     
     self.nameLable.text = model.coursename;
     NSString *price = [NSString stringWithFormat:@"%@",model.courseprice];
-    self.priceLable.text = [NSString stringWithFormat:@"￥ %@",price];
     self.detailLable.text = model.coursebrief;
     //更新detailLabel高度
     CGFloat height = ceilf([_detailLable sizeForTextFontMaxSize:CGSizeMake(self.contentView.size.width - 115, 50) font:_detailLable.font].height);
@@ -178,15 +178,23 @@
     }];
     
     
-    NSString *tag = [NSString stringWithFormat:@"%@",model.curstatus];
-    if ([tag isEqualToString:@"1"]) {
-        self.tagLable.text = @"授课中";
-        self.tagLable.textColor = [UIColor colorWithHexString:@"999999"];
-        self.tagLable.layer.borderColor = [UIColor colorWithHexString:@"999999"].CGColor;
+    if (model.canApply == NO) {
+        self.priceLable.hidden = YES;
+        self.tagLable.hidden = YES;
     } else {
-        self.tagLable.text = @"立即报名";
-        self.tagLable.textColor = [UIColor colorWithHexString:@"6493ff"];
-        self.tagLable.layer.borderColor = [UIColor colorWithHexString:@"6493ff"].CGColor;
+        self.priceLable.hidden = NO;
+        self.tagLable.hidden = NO;
+        self.priceLable.text = [NSString stringWithFormat:@"￥ %@",price];
+        NSString *tag = [NSString stringWithFormat:@"%@",model.curstatus];
+        if ([tag isEqualToString:@"1"]) {
+            self.tagLable.text = @"授课中";
+            self.tagLable.textColor = [UIColor colorWithHexString:@"999999"];
+            self.tagLable.layer.borderColor = [UIColor colorWithHexString:@"999999"].CGColor;
+        } else {
+            self.tagLable.text = @"立即报名";
+            self.tagLable.textColor = [UIColor colorWithHexString:@"6493ff"];
+            self.tagLable.layer.borderColor = [UIColor colorWithHexString:@"6493ff"].CGColor;
+        }
     }
     
 }

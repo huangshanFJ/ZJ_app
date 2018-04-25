@@ -46,7 +46,7 @@ static NSString *const classHeadImageCellID = @"ClassHeadImageCell";
     [super viewWillAppear:animated];
     self.navigationController.navigationBar.hidden = NO;
     [self setUpNav];
-    [self requestDate];
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -61,6 +61,8 @@ static NSString *const classHeadImageCellID = @"ClassHeadImageCell";
     selectedShopHead = 0;
     [self creatTable];
     [self creatCollectionView];
+    
+    [self requestDate];
 }
 
 -(void)requestDate {

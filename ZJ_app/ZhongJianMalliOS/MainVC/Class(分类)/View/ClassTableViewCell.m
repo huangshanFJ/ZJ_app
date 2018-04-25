@@ -30,8 +30,8 @@
     _titleLabel.textColor = [UIColor whiteColor];
     [self addSubview:_titleLabel];
     [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_offset(7);
-        make.right.mas_offset(-7);
+        make.left.mas_offset(5);
+        make.right.mas_offset(-5);
         make.height.mas_offset(25);
         make.top.mas_offset(20);
     }];
