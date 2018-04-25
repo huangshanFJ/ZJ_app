@@ -106,7 +106,7 @@
                   moduleName = "ZhongJianMalliOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fangjian/Documents/GitHub/ZJ_app/ZJ_app/ZhongJianMalliOS/Modules/Orders(%E8%AE%A2%E5%8D%95)/Controller/SettlementViewController.m"
-                  timestampString = "546164017.58726"
+                  timestampString = "546252902.330622"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "1303"
@@ -121,7 +121,7 @@
                   moduleName = "ZhongJianMalliOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fangjian/Documents/GitHub/ZJ_app/ZJ_app/ZhongJianMalliOS/Modules/Orders(%E8%AE%A2%E5%8D%95)/Controller/SettlementViewController.m"
-                  timestampString = "546164017.5902801"
+                  timestampString = "546252902.333883"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "1303"
@@ -218,7 +218,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZhongJianMalliOS/Modules/BusinessSchool(&#x5546;&#x5b66;&#x9662;)/Controller/DetailTempViewController.m"
-            timestampString = "546164040.773526"
+            timestampString = "546253559.462062"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "226"
@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZhongJianMalliOS/Modules/BusinessSchool(&#x5546;&#x5b66;&#x9662;)/Controller/DetailTempViewController.m"
-            timestampString = "546164087.00719"
+            timestampString = "546253559.462153"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "383"
-            endingLineNumber = "383"
+            startingLineNumber = "384"
+            endingLineNumber = "384"
             landmarkName = "-setupSegmentView"
             landmarkType = "7">
             <Locations>
@@ -250,11 +250,11 @@
                   moduleName = "ZhongJianMalliOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fangjian/Documents/GitHub/ZJ_app/ZJ_app/ZhongJianMalliOS/Modules/BusinessSchool(%E5%95%86%E5%AD%A6%E9%99%A2)/Controller/DetailTempViewController.m"
-                  timestampString = "546164087.015645"
+                  timestampString = "546252902.368134"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "383"
-                  endingLineNumber = "383"
+                  startingLineNumber = "384"
+                  endingLineNumber = "384"
                   offsetFromSymbolStart = "598">
                </Location>
                <Location
@@ -265,26 +265,26 @@
                   moduleName = "ZhongJianMalliOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fangjian/Documents/GitHub/ZJ_app/ZJ_app/ZhongJianMalliOS/Modules/BusinessSchool(%E5%95%86%E5%AD%A6%E9%99%A2)/Controller/DetailTempViewController.m"
-                  timestampString = "546164087.018593"
+                  timestampString = "546252902.371169"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "384"
-                  endingLineNumber = "384"
+                  startingLineNumber = "385"
+                  endingLineNumber = "385"
                   offsetFromSymbolStart = "59">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_.254"
+                  symbolName = "__destroy_helper_block_.252"
                   moduleName = "ZhongJianMalliOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fangjian/Documents/GitHub/ZJ_app/ZJ_app/ZhongJianMalliOS/Modules/BusinessSchool(%E5%95%86%E5%AD%A6%E9%99%A2)/Controller/DetailTempViewController.m"
-                  timestampString = "546164087.020685"
+                  timestampString = "546252902.373975"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "383"
-                  endingLineNumber = "383"
+                  startingLineNumber = "384"
+                  endingLineNumber = "384"
                   offsetFromSymbolStart = "12">
                </Location>
             </Locations>
@@ -297,11 +297,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZhongJianMalliOS/Modules/BusinessSchool(&#x5546;&#x5b66;&#x9662;)/Controller/DetailTempViewController.m"
-            timestampString = "546164092.03113"
+            timestampString = "546253559.462211"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "392"
-            endingLineNumber = "392"
+            startingLineNumber = "393"
+            endingLineNumber = "393"
             landmarkName = "-setupContentView"
             landmarkType = "7">
          </BreakpointContent>
@@ -313,7 +313,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ZhongJianMalliOS/Modules/BusinessSchool(&#x5546;&#x5b66;&#x9662;)/Controller/DetailTempViewController.m"
-            timestampString = "546164105.479674"
+            timestampString = "546253559.462273"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "177"
@@ -329,7 +329,7 @@
                   moduleName = "ZhongJianMalliOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fangjian/Documents/GitHub/ZJ_app/ZJ_app/ZhongJianMalliOS/Modules/BusinessSchool(%E5%95%86%E5%AD%A6%E9%99%A2)/Controller/DetailTempViewController.m"
-                  timestampString = "546164105.487694"
+                  timestampString = "546252902.389358"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "177"
@@ -344,7 +344,7 @@
                   moduleName = "ZhongJianMalliOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fangjian/Documents/GitHub/ZJ_app/ZJ_app/ZhongJianMalliOS/Modules/BusinessSchool(%E5%95%86%E5%AD%A6%E9%99%A2)/Controller/DetailTempViewController.m"
-                  timestampString = "546164105.490232"
+                  timestampString = "546252902.392135"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "178"
@@ -359,12 +359,60 @@
                   moduleName = "ZhongJianMalliOS"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/fangjian/Documents/GitHub/ZJ_app/ZJ_app/ZhongJianMalliOS/Modules/BusinessSchool(%E5%95%86%E5%AD%A6%E9%99%A2)/Controller/DetailTempViewController.m"
-                  timestampString = "546164105.492873"
+                  timestampString = "546252902.394984"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "177"
                   endingLineNumber = "177"
                   offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZhongJianMalliOS/MainVC/Class(&#x5206;&#x7c7b;)/Controller/DetailClassViewController.m"
+            timestampString = "546253559.46235"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "-createData:"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[DetailClassViewController createData:]"
+                  moduleName = "ZhongJianMalliOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fangjian/Documents/GitHub/ZJ_app/ZJ_app/ZhongJianMalliOS/MainVC/Class(%E5%88%86%E7%B1%BB)/Controller/DetailClassViewController.m"
+                  timestampString = "546252902.4036109"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
+                  offsetFromSymbolStart = "899">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__40-[DetailClassViewController createData:]_block_invoke"
+                  moduleName = "ZhongJianMalliOS"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fangjian/Documents/GitHub/ZJ_app/ZJ_app/ZhongJianMalliOS/MainVC/Class(%E5%88%86%E7%B1%BB)/Controller/DetailClassViewController.m"
+                  timestampString = "546252902.406484"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "131"
+                  endingLineNumber = "131"
+                  offsetFromSymbolStart = "52">
                </Location>
             </Locations>
          </BreakpointContent>

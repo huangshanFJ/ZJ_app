@@ -2499,11 +2499,11 @@
 			isa = PBXGroup;
 			children = (
 				DA10660E2071CDA700EF4061 /* UIButton+XYButton.h */,
-				DA10660F2071CDA700EF4061 /* UIViewController+AlertViewAndActionSheet.h */,
-				DA1066102071CDA700EF4061 /* UICollectionView+IndexPath.m */,
-				DA1066112071CDA700EF4061 /* UICollectionView+IndexPath.h */,
-				DA1066122071CDA700EF4061 /* UIViewController+AlertViewAndActionSheet.m */,
 				DA1066132071CDA700EF4061 /* UIButton+XYButton.m */,
+				DA10660F2071CDA700EF4061 /* UIViewController+AlertViewAndActionSheet.h */,
+				DA1066122071CDA700EF4061 /* UIViewController+AlertViewAndActionSheet.m */,
+				DA1066112071CDA700EF4061 /* UICollectionView+IndexPath.h */,
+				DA1066102071CDA700EF4061 /* UICollectionView+IndexPath.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";

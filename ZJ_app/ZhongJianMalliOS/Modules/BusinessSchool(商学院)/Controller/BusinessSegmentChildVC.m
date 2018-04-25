@@ -38,6 +38,7 @@ static NSString *businessSegmentChildCell = @"businessSegmentChildCell";
 //    CGRect frame =CGRectMake(0, 0, self.view.width, self.view.height);
     CGRect frame =CGRectMake(0, 0, self.view.width, self.frame.size.height);
     _tableV = [[UITableView alloc] initWithFrame:frame style:UITableViewStylePlain];
+    _tableV.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     _tableV.delegate = self;
     _tableV.dataSource = self;
     [self.view addSubview:_tableV];

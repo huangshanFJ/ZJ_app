@@ -124,7 +124,7 @@ static NSString *const giftCellID = @"MemberTableViewCell";
 //                          @"SubCategoryId":_categoryId,
                           @"type":selectedType,
                           @"page":page,
-                          @"pageNum":@"10"
+                          @"pageNum":@"20"
                           };
     [manager GET:url parameters:dic progress:^(NSProgress * _Nonnull downloadProgress) {
         
@@ -148,7 +148,7 @@ static NSString *const giftCellID = @"MemberTableViewCell";
                 
                 [_dataArray addObject:model];
             }
-            if (dataArr.count < 10) {
+            if (dataArr.count < 20) {
                 is_noMore = YES;
             }else
             {

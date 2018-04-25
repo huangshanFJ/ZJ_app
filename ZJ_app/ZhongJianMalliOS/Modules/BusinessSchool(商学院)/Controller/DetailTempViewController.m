@@ -240,7 +240,8 @@ static NSString *const CourseDetailVcCell = @"CourseDetailVcCell";
         ZJCustomGestureTableView *customTable = [[ZJCustomGestureTableView alloc] initWithFrame:frame style:UITableViewStylePlain];
         //设置tableView的headerView
         customTable.tableHeaderView = self.headView;
-        customTable.tableFooterView = [UIView new];
+//        customTable.tableFooterView = [UIView new];
+        customTable.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
         //设置cell行高位contentView高度
         customTable.rowHeight = self.contentView.bounds.size.height;
         customTable.delegate = self;
